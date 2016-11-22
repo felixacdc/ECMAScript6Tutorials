@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        'use strict';
+        
+        let movie = 'Good will Hunting';
+        
+        function theNotebook() {
+            let move = "The notebook"; // si comento esta linea movie toma el valor de la variable de scope global
+            
+            return move;
+        }
+        
+        console.log(movie);
+        console.log(theNotebook());
+        console.log(movie);
+        
+        function buckyFunction() {
+            let isHorse = true;
+            let saying = 'Bacon is good';
+            
+            console.log('\nBefor if:', saying);
+            
+            if(isHorse) {
+                let saying = 'I ame a horse';
+                console.log('\nBefor if:', saying);
+            }
+            
+            console.log('\nBefor if:', saying);
+        }
+        
+        buckyFunction();
+    
+    </script>
+</body>
+</html>
