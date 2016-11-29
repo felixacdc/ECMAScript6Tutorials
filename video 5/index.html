@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        'use strict';
+        
+        class Person {
+            contructor(name, age, weight) {
+                this.name = name;
+                this.age = age;
+                this.weight = weight;
+            }
+            
+            displayWeight() {
+                console.log(this.weight);
+            }
+        }
+        
+        let bucky = new Person("bucky", 87, 6650);
+        let sally = new Person("sally", 21, 89);
+        
+        bucky.displayWeight();
+        sally.displayWeight();
+    </script>
+</body>
+</html>
