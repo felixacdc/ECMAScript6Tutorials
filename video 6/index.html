@@ -34,12 +34,23 @@
                 super(name, age, weight);
                 this.language = language;
             }
+            
+            displayLanguage() {
+                console.log(this.language);
+            }
         }
         
         let sally = new Person("sally", 21, 89);
         
         sally.displayName();
+        sally.displayAge();
         sally.displayWeight();
+        
+        console.log('-----------------');
+        
+        let bucky = new Programmer('Bucky Roberts', 87, 987, 'JavaScript');
+        bucky.displayName();
+        bucky.displayAge();
     </script>
 </body>
 </html>
