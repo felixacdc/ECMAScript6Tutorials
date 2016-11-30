@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        'use strict';
+        
+        class Person {
+            contructor(name, age, weight) {
+                this.name = name;
+                this.age = age;
+                this.weight = weight;
+            }
+            
+            displayName() {
+                console.log(this.name);
+            }
+            
+            displayAge() {
+                console.log(this.age);
+            }
+            
+            displayWeight() {
+                console.log(this.weight);
+            }
+        }
+        
+        class Programmer extends Person {
+            constructor(name, age, weight, language) {
+                super(name, age, weight);
+                this.language = language;
+            }
+        }
+        
+        let sally = new Person("sally", 21, 89);
+        
+        sally.displayName();
+        sally.displayWeight();
+    </script>
+</body>
+</html>
